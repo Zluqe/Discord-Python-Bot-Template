@@ -1,5 +1,5 @@
 folders = {
-    "cogs": "./src/cogs/",
+    "cogs": "./src/addons/",
     "data": "./src/data/",
     "config": "./config/",
 }
