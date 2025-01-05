@@ -1,0 +1,15 @@
+# Environment directories
+env/
+venv/
+.env/
+.venv/
+
+# IDE directories
+.idea/
+.vscode/
+
+# Python artifacts
+__pycache__/
+*.pyc
+
+config.yml
