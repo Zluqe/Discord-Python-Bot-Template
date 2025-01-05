@@ -1,5 +1,3 @@
-import disnake
-from disnake.ext import commands
 from src.utils.files_loader import load_config
 from datetime import datetime
 
