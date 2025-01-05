@@ -1,4 +1,5 @@
 import yaml, json, os
+from src.data.var import files
 
 def file_loader(file_path: str):
     if os.path.exists(file_path):
@@ -11,3 +12,11 @@ def file_loader(file_path: str):
                 raise ValueError("Unsupported file format")
     else:
         raise FileNotFoundError(f"File not found: {file_path}")
+
+def load_config():
+    f = files['config']
+    exemple_file = files['exemple_config']
+    if not os.path.exists(f):
+        return file_loader(exemple_file)
+    else:
+        return file_loader(f)
