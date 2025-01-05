@@ -2,6 +2,7 @@ import os
 
 from src.data.var import folders
 
+
 class Loader():
     def __init__(self, bot):
         self.bot = bot

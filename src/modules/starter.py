@@ -1,5 +1,7 @@
-from src.utils.files_loader import load_config
 from datetime import datetime
+
+from src.utils.files_loader import load_config
+
 
 class Starter:
     def __init__(self, bot):

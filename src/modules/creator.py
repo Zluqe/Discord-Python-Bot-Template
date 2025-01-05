@@ -1,6 +1,8 @@
 import os
-from src.data.var import folders, files
+
+from src.data.var import files, folders
 from src.utils.files_loader import file_loader
+
 
 class Creator:
     def __init__(self):
@@ -15,7 +17,9 @@ class Creator:
 
     def create_file(self, path, content):
         if not os.path.exists(path):
-            import yaml, json
+            import json
+
+            import yaml
             if path.endswith('.yaml') or path.endswith('.yml'):
                 content = yaml.dump(content)
             elif path.endswith('.json'):

@@ -1,5 +1,9 @@
-import yaml, json, os
+import json
+import os
+
+import yaml
 from src.data.var import files
+
 
 def file_loader(file_path: str):
     if os.path.exists(file_path):
