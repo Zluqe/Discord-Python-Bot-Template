@@ -11,3 +11,5 @@ venv/
 # Python artifacts
 __pycache__/
 *.pyc
+
+config.yml
